@@ -1,0 +1,141 @@
+
+
+
+#del{
+    height: 13px;
+    color : rgb(233, 225, 225);
+    
+}
+#ed{
+    height: 13px;
+    color: blue;
+}
+*{
+    box-sizing: border-box;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin: 0 ;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: rgb(89, 90, 96);
+    color:whitesmoke;
+
+}
+header{
+    padding: 3rem 2rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+header h1{
+    font: size 2.8rem;
+    font-weight: 450;
+    margin-bottom: 1.5rem;
+    color: gray;
+}
+#new-task-form{
+    display: flex;
+}
+input,button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+#new-task-input{
+    flex: 1 1 0%;
+    background-color: rgb(15, 15, 15);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: rgb(146, 97, 97);
+    font-size: 1.25rem;
+}
+#new-task-input::placeholder{
+    color:rgb(238, 238, 238);
+}
+#input-task-submit{
+    color: rgb(247, 39, 152);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    background-image: linear-gradient(to right ,rgb(221, 45, 197),rgb(117, 107, 232));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s ease;
+}
+#input-task-submit:hover{
+    opacity: 0.8;
+}
+#input-task-submit:active{
+    opacity: 0.6;
+}
+main{
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.Task-list{
+   padding: 1rem;
+}
+.Task-list h2{
+    font: size 2.8rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: gray;
+}
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+
+}
+#tasks .task .content .text {
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    display: block;
+    transition : 0.4s ease;
+    padding: 20px;
+}
+#tasks .task .content .text :not(:read-only){
+    color: pink;
+}
+#tasks .task .action{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+.task .action button{
+    cursor: pointer;
+    margin: 1 0.5rem;
+    font-size :1.125em; 
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#task .action button:hover{
+    opacity: 0.8;
+}
+#task .action button:active{
+    opacity: 0.6;
+}
+.edit{
+    background-image: linear-gradient(to left ,rgb(247, 39, 152),rgb(245, 125, 31));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2vh;
+    
+}
+.delete{
+    color:rgb(191, 16, 68);
+    font-size: 2vh;
+}

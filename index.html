@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <title>To-do-List</title>
+</head>
+
+<body>
+    <header>
+        <h1>My Task List</h1>
+        <form id="new-task-form">
+            <input type="text" id="new-task-input" placeholder="Add a task..."/>
+            <input type="submit" value="Add a task" id="input-task-submit"/>
+        </form>
+    </header>
+    
+        <main>
+            <section class="Task-list">
+                <h2>My Tasks:</h2>
+                <div id="tasks">
+                    <!-- <div class="task">
+                        <div class="content">
+                            <input type="text" class="text" value="my shiny tasks" readonly>
+                        </div>
+                        <div class="action">
+                        <button class="edit"><i data-lucide="pencil" id="ed"></i>Edit</button>
+                        <button class="delete"><i data-lucide="trash-2" id="del"></i>Delete</i></button>
+                    </div>
+                    </div> -->
+                </div>
+
+            </section>
+        </main>
+  
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="/main.js"></script>
+</body>
+</html>
